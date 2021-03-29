@@ -7,5 +7,7 @@ const BASEURL = 'https://randomuser.me/api/'
 //filter the users by at least one property
 
 export default {
-
+    search: function (query) {
+        return axios.get(BASEURL + query)
+    }
 }
