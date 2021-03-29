@@ -1,1 +1,11 @@
 import axios from 'axios'
+//api baseurl
+const BASEURL = 'https://randomuser.me/api/'
+
+//sort table by at least one category   
+
+//filter the users by at least one property
+
+export default {
+
+}
