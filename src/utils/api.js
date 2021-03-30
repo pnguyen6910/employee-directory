@@ -1,6 +1,6 @@
 import axios from 'axios'
 //api baseurl
-const BASEURL = 'https://randomuser.me/api/?results=50'
+const BASEURL = 'https://randomuser.me/api/?results=20'
 
 //sort table by at least one category   
 
