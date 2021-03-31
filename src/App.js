@@ -1,18 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-import TableContainer from './components/container/Container'
-import Container from './components/container/Container'
+import React, { Component } from 'react'
+import Wrapper from './components/Wrapper'
+import Table from './components/Table'
+import Header from './components/Header'
+import Search from './components/Search'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Employee Directory</h1>
-        <Container />
+class App extends Component {
+  state = {
+    countrySearched: ''
+  }
 
-      </header>
-    </div >
-  );
+  findCountry = (country) => {
+    this.setState({ countrySearched: country })
+  }
+
+  render() {
+    return (
+      <Wrapper>
+        <Header />
+        <Search findCountry={this.findCountry} />
+        <Table contrySearched={this.state.countrySearched} />
+      </Wrapper>
+    );
+  }
 }
 
 export default App;
