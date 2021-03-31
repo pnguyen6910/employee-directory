@@ -18,3 +18,5 @@ function Search(props) {
         </InputGroup>
     )
 }
+
+export default Search
